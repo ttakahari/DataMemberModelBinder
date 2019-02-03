@@ -3,9 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02218BC1-7BD1-44DF-BEB6-167237CCD987}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataMemberModelBinder.AspNet.Mvc", "src\DataMemberModelBinder.AspNet.Mvc\DataMemberModelBinder.AspNet.Mvc.csproj", "{FFB6FA06-F753-4395-8743-761E60499687}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFB6FA06-F753-4395-8743-761E60499687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB6FA06-F753-4395-8743-761E60499687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB6FA06-F753-4395-8743-761E60499687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB6FA06-F753-4395-8743-761E60499687}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FFB6FA06-F753-4395-8743-761E60499687} = {02218BC1-7BD1-44DF-BEB6-167237CCD987}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A6C61903-7C89-475A-8E4F-F68AE5657638}
