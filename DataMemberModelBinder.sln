@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02218BC1-7BD1-44DF-BEB6-167237CCD987}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataMemberModelBinder.AspNet.Mvc", "src\DataMemberModelBinder.AspNet.Mvc\DataMemberModelBinder.AspNet.Mvc.csproj", "{FFB6FA06-F753-4395-8743-761E60499687}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataMemberModelBinder.AspNet.Mvc", "src\DataMemberModelBinder.AspNet.Mvc\DataMemberModelBinder.AspNet.Mvc.csproj", "{FFB6FA06-F753-4395-8743-761E60499687}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataMemberModelBinder.AspNetCore.Mvc", "src\DataMemberModelBinder.AspNetCore.Mvc\DataMemberModelBinder.AspNetCore.Mvc.csproj", "{B942CBAA-A088-4D37-8926-D6C7AA91C272}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +19,17 @@ Global
 		{FFB6FA06-F753-4395-8743-761E60499687}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFB6FA06-F753-4395-8743-761E60499687}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFB6FA06-F753-4395-8743-761E60499687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B942CBAA-A088-4D37-8926-D6C7AA91C272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B942CBAA-A088-4D37-8926-D6C7AA91C272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B942CBAA-A088-4D37-8926-D6C7AA91C272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B942CBAA-A088-4D37-8926-D6C7AA91C272}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FFB6FA06-F753-4395-8743-761E60499687} = {02218BC1-7BD1-44DF-BEB6-167237CCD987}
+		{B942CBAA-A088-4D37-8926-D6C7AA91C272} = {02218BC1-7BD1-44DF-BEB6-167237CCD987}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A6C61903-7C89-475A-8E4F-F68AE5657638}
