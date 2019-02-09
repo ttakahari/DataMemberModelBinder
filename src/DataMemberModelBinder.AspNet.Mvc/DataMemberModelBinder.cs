@@ -15,21 +15,23 @@ namespace DataMemberModelBinder.AspNet.Mvc
         /// <inheritdoc cref="DefaultModelBinder.OnModelUpdated(ControllerContext, ModelBindingContext)" />
         protected override void OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
         {
-            var startedValid = new Dictionary<string, bool>(StringComparer.OrdinalIgnoreCase);
+            var subPropertyNames = new HashSet<string>();
 
             foreach (var validationResult in new CompositeModelValidator(bindingContext.ModelMetadata, controllerContext).Validate(null))
             {
-                string subPropertyName = CreateSubPropertyName(bindingContext.ModelName, validationResult.MemberName);
+                var subPropertyName = CreateSubPropertyName(bindingContext.ModelName, validationResult.MemberName);
 
-                if (!startedValid.ContainsKey(subPropertyName))
+                if (!subPropertyNames.Contains(subPropertyName))
                 {
-                    startedValid[subPropertyName] = bindingContext.ModelState.IsValidField(subPropertyName);
+                    var isValidField = bindingContext.ModelState.IsValidField(subPropertyName);
+
+                    if (isValidField)
+                    {
+                        bindingContext.ModelState.AddModelError(subPropertyName, validationResult.Message);
+                    }
                 }
 
-                if (startedValid[subPropertyName])
-                {
-                    bindingContext.ModelState.AddModelError(subPropertyName, validationResult.Message);
-                }
+                subPropertyNames.Add(subPropertyName);
             }
         }
 
