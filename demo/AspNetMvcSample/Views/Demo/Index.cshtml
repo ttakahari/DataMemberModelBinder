@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+<div>
+    <form action="get" method="get">
+        <div>
+            Foo:<input type="text" name="foo" />
+        </div>
+        <div>
+            Bar:<select name="bar"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+        </div>
+        <div>
+            Baz:<input type="checkbox" name="baz" value="1" /><label for="1">1</label><input type="checkbox" name="baz" value="2" /><label for="2">2</label><input type="checkbox" name="baz" value="3" /><label for="3">3</label>
+        </div>
+        <div>
+            <input type="submit" value="GET" />
+        </div>
+    </form>
+</div>
+<div>
+    <form action="post" method="post">
+        <div>
+            Foo:<input type="text" name="foo" />
+        </div>
+        <div>
+            Bar:<select name="bar"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+        </div>
+        <div>
+            Baz:<input type="checkbox" name="baz" value="1" /><label for="1">1</label><input type="checkbox" name="baz" value="2" /><label for="2">2</label><input type="checkbox" name="baz" value="3" /><label for="3">3</label>
+        </div>
+        <div>
+            <input type="submit" value="POST" />
+        </div>
+    </form>
+</div>
