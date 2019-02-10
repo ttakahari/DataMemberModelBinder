@@ -1,0 +1,17 @@
+﻿@model AspNetCoreMvcSample.Models.DemoFormModel
+@{
+    ViewBag.Title = "Get";
+}
+
+<h2>Post</h2>
+<div>
+    <div>
+        TextBox:@Model.TextBox
+    </div>
+    <div>
+        DropdownList:@Model.DropdownList
+    </div>
+    <div>
+        ChackboxList:@string.Join(",", Model.CheckBoxList)
+    </div>
+</div>

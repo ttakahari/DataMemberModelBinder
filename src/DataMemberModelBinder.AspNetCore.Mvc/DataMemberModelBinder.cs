@@ -71,6 +71,7 @@ namespace DataMemberModelBinder.AspNetCore.Mvc
                         ModelMetadata = property,
                         ModelName = dataMemberAttribute.Name,
                         ModelState = bindingContext.ModelState,
+                        FieldName = dataMemberAttribute.Name,
                         ValueProvider = bindingContext.ValueProvider
                     };
 

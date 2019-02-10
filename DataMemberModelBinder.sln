@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{1EAC5888-F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMvcSample", "demo\AspNetMvcSample\AspNetMvcSample.csproj", "{09F40B6F-9A86-47B2-9954-0170AC295685}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreMvcSample", "demo\AspNetCoreMvcSample\AspNetCoreMvcSample.csproj", "{BBC515DA-6039-4F16-96DA-09251B432BEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{09F40B6F-9A86-47B2-9954-0170AC295685}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09F40B6F-9A86-47B2-9954-0170AC295685}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09F40B6F-9A86-47B2-9954-0170AC295685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBC515DA-6039-4F16-96DA-09251B432BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC515DA-6039-4F16-96DA-09251B432BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC515DA-6039-4F16-96DA-09251B432BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC515DA-6039-4F16-96DA-09251B432BEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{FFB6FA06-F753-4395-8743-761E60499687} = {02218BC1-7BD1-44DF-BEB6-167237CCD987}
 		{B942CBAA-A088-4D37-8926-D6C7AA91C272} = {02218BC1-7BD1-44DF-BEB6-167237CCD987}
 		{09F40B6F-9A86-47B2-9954-0170AC295685} = {1EAC5888-FFBA-4277-A74E-94646F29D819}
+		{BBC515DA-6039-4F16-96DA-09251B432BEB} = {1EAC5888-FFBA-4277-A74E-94646F29D819}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A6C61903-7C89-475A-8E4F-F68AE5657638}
